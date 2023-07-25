@@ -1,0 +1,28 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+	height: 100%;
+}
+
+.container  {
+  display: flex;
+  /*this centers the text horizontally*/
+  justify-content: center;
+
+  /*this centers the text vertically*/
+  align-items: center;
+
+  min-height: 100%;
+  color: #fff;
+  font-size: 1.2rem;
+  background: #ffffff;
+}
+
+
+.container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #000000bb;
+    font-size: 4rem;
+}
