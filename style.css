@@ -71,6 +71,11 @@ p a:hover{
 }
 
 
+::selection {
+  background-color: #16E9E8;
+}
+
+
 
 
 
