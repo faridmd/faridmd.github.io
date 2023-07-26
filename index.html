@@ -16,12 +16,16 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Poppins:ital,wght@0,100;0,300;0,700;1,100&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="flex-container">
       <div class="content">
-        <h1>Farid Anwar, a College Student</h1>
+        <!-- <h1>Farid Anwar, a College Student</h1> -->
+
+        <h1>Farid Anwar, a <span id="typed-text"></span></h1>
+
         <strong class="degree"
           >Currently studying for a mechatronics education degree</strong
         >
@@ -33,5 +37,13 @@
         </p>
       </div>
     </div>
+    <script>
+      var typed = new Typed("#typed-text", {
+        strings: ["College Student", "Programmer", "Rice Eater"],
+        typeSpeed: 50,
+        backSpeed: 20,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
