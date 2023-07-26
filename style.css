@@ -1,28 +1,71 @@
 html,
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 	height: 100%;
+  background-color: #fff;
 }
 
-.container  {
+.flex-container  {
   display: flex;
-  /*this centers the text horizontally*/
+  /*centers the text horizontally*/
   justify-content: center;
 
-  /*this centers the text vertically*/
+  /*centers the text vertically*/
   align-items: center;
 
+  flex-direction: column;
   min-height: 100%;
   color: #fff;
   font-size: 1.2rem;
   background: #ffffff;
 }
 
+.content {
+  /* border: 1px solid salmon; */
+}
 
-.container h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: #000000bb;
-    font-size: 4rem;
+h1 {
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 1.5rem;
+	font-weight: 300;
+	letter-spacing: -1px;
+	line-height: 96px;
+  color:  #051438;
+  margin-bottom: 0;
+}
+
+
+strong {
+  display: block;
+	font-family: Poppins, sans-serif;
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 96px;
+  color:  #051438;
+	max-width: 2rem;
+  margin-bottom: 0;
+  max-width: 50rem;
+}
+
+p {
+  display: block;
+	font-family: Poppins, sans-serif;
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 42px;
+  color:  #051438;
+  max-width: 50rem;
+}
+
+p a {
+  text-decoration: none;
+  border: 1px solid;
+  color: #fff;
+  background-color: #051438c5;
+  padding: 0.5rem;
+}
+
+p a:hover{
+  background-color: #051438;
 }
