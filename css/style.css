@@ -129,7 +129,7 @@ p a:hover{
 }
 
 /* Mobile Phone */
-@media (max-width: 450px){
+@media (max-width: 467px){
   .content {
     /* border: 1px solid salmon; */
   }
