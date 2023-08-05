@@ -2,11 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-	height: 100%;
+  height: 100%;
   background-color: #fff;
 }
 
-.flex-container  {
+.flex-container {
   display: flex;
   /*centers the text horizontally*/
   justify-content: center;
@@ -26,34 +26,33 @@ body {
 }
 
 h1 {
-	font-family: 'JetBrains Mono', monospace;
-	font-size: 1.5rem;
-	font-weight: 300;
-	letter-spacing: -1px;
-	line-height: 96px;
-  color:  #051438;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 96px;
+  color: #051438;
   margin-bottom: 0;
 }
 
-
 strong {
   display: block;
-	font-family: Poppins, sans-serif;
-	font-size: 80px;
-	font-weight: 700;
-	line-height: 96px;
-  color:  #051438;
-	max-width: 2rem;
+  font-family: Poppins, sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 96px;
+  color: #051438;
+  max-width: 2rem;
   margin-bottom: 0;
   max-width: 50rem;
 }
 
 p {
   display: block;
-	font-family: Poppins, sans-serif;
-	font-size: 40px;
-	font-weight: 300;
-  color:  #051438;
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: #051438;
   max-width: 50rem;
 }
 
@@ -63,32 +62,26 @@ p a {
   color: #fff;
   background-color: #051438c5;
   padding: 0.5rem;
+  font-size: 1.75rem;
   /* border-radius: 10px; */
 }
 
-p a:hover{
+p a:hover {
   background-color: #051438;
 }
 
-
 ::selection {
-  background-color: #16E9E8;
+  background-color: #16e9e8;
 }
-
-
-
-
-
-
 
 /* Media Queries */
 
 /* Laptop */
-@media (max-width: 1366px){
+@media (max-width: 1366px) {
   /* font-size: 55%; */
 }
 /* Tablet */
-@media (max-width: 758px){
+@media (max-width: 758px) {
   /* font-size: 55%; */
   .content {
     /* border: 1px solid salmon; */
@@ -108,28 +101,26 @@ p a:hover{
 
   p {
     display: flex;
-    font-size: 30px;
-    color:  #051438;
+    font-size: 2rem;
+    color: #051438;
     max-width: 25rem;
     flex-direction: column;
     /* border: 1px solid salmon; */
   }
-  
+
   p a {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
     width: fit-content;
   }
 
-  p a:hover{
+  p a:hover {
     background-color: #051438;
   }
-
-
 }
 
 /* Mobile Phone */
-@media (max-width: 467px){
+@media (max-width: 467px) {
   .content {
     /* border: 1px solid salmon; */
   }
@@ -148,19 +139,18 @@ p a:hover{
 
   p {
     display: flex;
-    font-size: 2rem;
+    font-size: 1.7rem;
     flex-direction: column;
     /* border: 1px solid salmon; */
   }
-  
+
   p a {
-    font-size: 1rem;
-    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
     width: fit-content;
   }
 
-  p a:hover{
+  p a:hover {
     background-color: #051438;
   }
-
 }
