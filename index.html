@@ -3,44 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hi There</title>
+    <title>Hi there</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Poppins:ital,wght@0,100;0,300;0,700;1,100&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <div class="flex-container">
-      <div class="content">
-        <h1>Farid Anwar, <span id="typed-text"></span></h1>
-        <strong class="degree"
-          >Currently studying for a mechatronics education degree</strong
-        >
-        <p>
-          Visit my project:
-          <a href="https://faridmd.github.io/bakulkopi/" target="_blank"
-            >bakulkopi</a
+    <!-- Header -->
+    <section>
+      <div class="container">
+        <div class="flex flex-col justify-center h-screen">
+          <h1
+            data-aos="fade-right"
+            class="font-['JetBrains_Mono'] text-lg text-slate-700 mx-5 md:text-xl md:mx-16 xl:text-2xl xl:mx-24 xl:mb-10"
           >
-          <a
-            href="https://faridmd.github.io/portfolio-tailwind-css/"
-            target="_blank"
-            >myPortfolio</a
+            Farid Anwar, <span id="typed-text"></span>
+          </h1>
+          <strong
+            data-aos="fade-left"
+            class="font-['Poppins'] text-5xl mx-5 md:mx-16 md:text-7xl xl:text-8xl xl:mx-24 text-slate-700"
+            >Currently studying for mechatronics education degree
+          </strong>
+          <p
+            data-aos="fade-left"
+            class="font-['Poppins'] text-xl mx-5 my-3 md:mx-16 md:text-2xl md:my-5 xl:mx-28 xl:mt-28"
           >
-        </p>
+            Visit my project:
+          </p>
+
+          <ul data-aos="fade-left" class="block md:flex md:mx-12 xl:mx-24 xl">
+            <li class="group">
+              <a
+                href="https://faridmd.github.io/bakulkopi/"
+                target="_blank"
+                class="inline-block border bg-slate-600 text-slate-200 text-lg mx-5 my-1 p-2 group-hover:bg-slate-800 duration-500 rounded-lg"
+                >bakulkopi</a
+              >
+            </li>
+            <li class="group">
+              <a
+                href="https://faridmd.github.io/portfolio-tailwind-css/"
+                target="_blank"
+                class="inline-block border bg-slate-600 text-slate-200 text-lg mx-5 my-1 p-2 group-hover:bg-slate-800 duration-500 rounded-lg"
+                >myPortofolio</a
+              >
+            </li>
+            <li class="group">
+              <a
+                href="https://github.com/faridmd/ezmonev"
+                target="_blank"
+                class="inline-block border bg-slate-600 text-slate-200 text-lg mx-5 my-1 p-2 group-hover:bg-slate-800 duration-500 rounded-lg"
+                >ezMonev()</a
+              >
+            </li>
+            <li class="group">
+              <a
+                href="https://faridmd.github.io/freeMentalConsul/"
+                target="_blank"
+                class="inline-block border bg-slate-600 text-slate-200 text-lg mx-5 my-1 p-2 group-hover:bg-slate-800 duration-500 rounded-lg"
+                >freeMentalConsul</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
+
     <script>
-      var typed = new Typed("#typed-text", {
-        strings: ["Undergraduate Student", "Web Developer", "Rice Eater"],
+      const typed = new Typed("#typed-text", {
+        strings: ["Student", "Web Developer", "Engineer"],
         typeSpeed: 40,
-        backSpeed: 20,
+        backSpeed: 35,
         loop: true,
       });
+
+      AOS.init();
     </script>
   </body>
 </html>
